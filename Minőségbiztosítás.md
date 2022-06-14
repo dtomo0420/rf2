@@ -270,7 +270,7 @@ A feature az elvárt követelményeknek megfelelően működik, hibamentesen lef
 
 - **unit tesztek:**
 
-![image](/uploads/ee122d4a4182a9d6d84cfc0d82675e6c/image.png)
+![image](https://user-images.githubusercontent.com/71877876/173691494-deb652e5-5ead-4351-b647-1b5d57c1609e.png)
 
 ### Felhasználói élmény
 Magának a programnak elsődleges célja a forráskód hatékony vizualiációja. A megvalósított feature jelentősen növeli a program ezen funnkcióját. Több lehetőséget is biztosítunk a felhasználónak a sub-building-ek listázására:
