@@ -115,7 +115,7 @@ Abban az esetben, ha bármely argumentum hibásan van megadva, hibaüzenetet kap
 
 ## Minőségbiztosítás
 
-[link]()
+[link](https://github.com/dtomo0420/rf2/blob/main/Min%C5%91s%C3%A9gbiztos%C3%ADt%C3%A1s)
 
 ## Dokumentációk
 
