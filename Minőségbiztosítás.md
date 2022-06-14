@@ -68,7 +68,7 @@ Először a fentebb említett `findNode` metódus lett tesztelve. Minden esetben
 
 #### A futás eredménye pedig:
 
-![image](/uploads/367b5cc1ea5159a53919ab5fade0c2da/image.png)
+![image](https://user-images.githubusercontent.com/71877876/173691338-e7142d07-2c0b-4979-99c6-02379565d214.png)
 
 Ezt követően a `getNodes` metódus tesztelése következett. Ennek lényege, hogy az előbbi, `findNote` által megtalált elemnek lekéri, majd eltárolja a gyermekeit. A metódus harmadik paramétere egy boolean érték, mely azért felel, hogy "mély" keresést végez, ha szeretnénk. Ha igen, azaz `true` értéket adunk meg, úgy nem csak az adott `Node` közvetlen gyermekeit kapjuk meg, hanem azok gyermekeit is, és így tovább rekurzívan minden elemet összegyűjtünk. 
 
@@ -141,7 +141,7 @@ Először simán, közvetlen gyermekekre készültek el a tesztesetek. Vizsgálv
 
 #### Eredmény:
 
-![image](/uploads/e65bc5e3cf393167a148e1bd348e7b37/image.png)
+![image](https://user-images.githubusercontent.com/71877876/173691305-19e6c8a1-c991-4e87-ab4f-ea06c66a3a8d.png)
 
 Az utolsó körben az **extra** mély keresés eredményessége lett tesztelve, hasonló módon, mint a sima. Kerestünk 0 gyermekes elemet, illetve gazdagabb családdal rendelkezőt is.
 
@@ -194,13 +194,13 @@ Az utolsó körben az **extra** mély keresés eredményessége lett tesztelve, 
 
 #### Eredmény:
 
-![image](/uploads/5776af4cef5899b2b7bb53c209743300/image.png)
+![image](https://user-images.githubusercontent.com/71877876/173691264-2e3e1f48-1a4f-49a1-9323-03a44e81b26d.png)
 
 #### Végeredmény: 
 
 Minden elkészített teszteset eredményesen lefutott, így kijelenthető, hogy megfelelően működik az elkészült feature.
 
-![image](/uploads/ee122d4a4182a9d6d84cfc0d82675e6c/image.png)
+![image](https://user-images.githubusercontent.com/71877876/173691244-7921adff-1c89-4747-9dc0-9fac0a7ac644.png)
 
 ## Végfelhasználói tesztek
 
@@ -225,10 +225,10 @@ A feladatunk az volt, hogy a világban mászkáló játékosnak, amennyiben az �
 
 #### Próba:
   - keressünk a `placintToRendering.xml`-ben egy tetszőleges elemet, legyen ez pl. a `IFLPreferencePage`. Ez az XML-ben az alábbiak szerint néz ki:
-![image](/uploads/14de06c470044a8e53f7b753ff0af9b4/image.png)
+![image](https://user-images.githubusercontent.com/71877876/173691146-a625a9a3-4cdb-42d4-8023-a9c1dcf28a9b.png)
   - navigáljunk el az adott koordinátára az XML alapján, melyek a következőek lesznek: `x="24" y="68" z="244"`
   - írjuk be a parancsot, majd a következő képet kell, hogy kapjuk:
-![2022-05-01_12.58.06](/uploads/d2c38c29035466230beddaf4e2a22f0d/2022-05-01_12.58.06.png)
+ ![image](https://user-images.githubusercontent.com/71877876/173691183-bcd3799a-c0af-4333-adff-a38788ebb2d6.png)
   - ahogy az látszik, nem kaptunk meg minden elemet, amit az XML-ben láthattunk. Ennek oka, hogy több elem van, mint amennyit a játék meg tud jeleníteni egyszerre. Erre a célre lett **extra funkcióként** kifejlesztve, hogy oldalakra bontva jelenítse meg a plugin az adatokat
   - annak érdekében, hogy a maradék adatot is elérjük, "lapozzunk", írjunk a parancs után egy tetszőleges számot. Ebben az esetben, ahogy a képen is látszik, csak 2 oldal van, így próbáljuk meg elérni azt:
 ![2022-05-01_13.00.45](/uploads/ccd08460424c85d18cb612d8d35f1ea5/2022-05-01_13.00.45.png)
@@ -236,9 +236,9 @@ A feladatunk az volt, hogy a világban mászkáló játékosnak, amennyiben az �
 
 ##### + Extra funkció:
   - észrevehetjük az XML-ben, hogy vannak elemek, melyeknek további gyermekei vannak:
-![image](/uploads/354360feb4ebc2279a8b36c80b892454/image.png)
+![image](https://user-images.githubusercontent.com/71877876/173690979-ce901099-4aca-4748-98b0-19ad0e856d9f.png)
   - ezek eléréshez a játékon belül, a parancsot használjuk a `-d`, vagy `-deep` kapcsolóval, az eredmény a következő lesz:
-![2022-05-01_13.06.22](/uploads/61f33babe5d87d183dd4585f4c6afafa/2022-05-01_13.06.22.png)
+![image](https://user-images.githubusercontent.com/71877876/173690935-b061d8ce-90b7-4492-8e69-8cd72ae385a9.png)
   - ahogy a fájlban is láthattuk a gyermekeket, úgy a játékban is megjelennek a kapcsoló hatására
 
 ##### Hibás használat
@@ -247,11 +247,11 @@ Mi történik akkor, ha rosszul használjuk a programot? Természetesen ezek is 
 
 Olyan oldal megadása, ami nem létezik:
 
-![2022-05-07_11.47.15](/uploads/d757836dce08dc7618ea73c8699ef238/2022-05-07_11.47.15.png)
+![image](https://user-images.githubusercontent.com/71877876/173690828-36340a9a-0d22-4a51-8d4a-c7d60ddc6c60.png)
 
 Hibás paraméter megadása:
 
-![2022-05-07_11.48.04](/uploads/0eeb1d163c7641e9c2b583a83aa49730/2022-05-07_11.48.04.png)
+![image](https://user-images.githubusercontent.com/71877876/173690872-51f1e6fa-5706-49e2-b649-9cc2b6736298.png)
 
 # Szoftverelemzés: minőségriport kkódelemzés alapján
 
@@ -462,4 +462,5 @@ A Plugin.java fájl 5.sorában a hiányzó javadoc-ra figyelmeztet a rendszer.
 
 ### Az elemzés eredménye a feature megvalósítása után, kördiagrammon ábrázolva a szabálysértések arányának megfelelően
 
-![checkstyle](/uploads/0f35655271c3f49129a48ba9a127aa92/checkstyle.png)
+![image](https://user-images.githubusercontent.com/71877876/173690730-77c437a3-e15b-4ec6-9233-29578020fad5.png)
+
